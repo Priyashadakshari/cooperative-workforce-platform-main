@@ -1,0 +1,142 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar .logo {
+  margin-left: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Main page */
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 25px;
+}
+
+/* Home */
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+
+.card {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Textarea */
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+/* Buttons */
+
+button {
+  border: none;
+  border-radius: 7px;
+  padding: 12px 22px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Worker cards */
+
+.worker-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.worker-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.worker-card h2 {
+  margin-top: 0;
+}
+
+/* Error */
+
+.error {
+  color: #c62828;
+  margin: 10px 0;
+}
+
+/* Success */
+
+.success {
+  text-align: center;
+}
